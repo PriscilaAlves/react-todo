@@ -23,7 +23,7 @@ describe("AddTodo", () => {
         expect(spy).toHaveBeenCalledWith(todoText);
     });
 
-    it("should not call onAddTodo if ivalid text entered", () => {
+    it("should not call onAddTodo if invalid text entered", () => {
         var todoText = ""
         var spy = expect.createSpy();
         var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
